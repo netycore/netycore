@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DP Creative Photography</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:Arial, sans-serif;
+background:#0a0a0a;
+color:white;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
+url('cover.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:10px;
+animation:fadeIn 1.5s ease;
+}
+
+.hero-content p{
+font-size:22px;
+opacity:.9;
+animation:fadeIn 2s ease;
+}
+
+section{
+padding:80px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin-bottom:50px;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.8;
+font-size:18px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:350px;
+object-fit:cover;
+border-radius:15px;
+transition:.4s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+}
+
+.contact{
+text-align:center;
+}
+
+.btn{
+display:inline-block;
+margin:10px;
+padding:14px 30px;
+background:#ffffff;
+color:#000;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+transition:.3s;
+}
+
+.btn:hover{
+transform:translateY(-3px);
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#000;
+}
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+.section-title{
+font-size:30px;
+}
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+<div class="hero-content">
+<h1>DP Creative Photography</h1>
+<p>Capturing Emotions • Creating Memories</p>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">About Me</h2>
+
+<div class="about">
+Welcome to DP Creative Photography.
+I specialize in creative portraits, cinematic edits,
+digital artwork and unique visual storytelling.
+Every image is crafted with passion and creativity.
+</div>
+</section>
+
+<section>
+<h2 class="section-title">My Gallery</h2>
+
+<div class="gallery">
+
+<img src="photo1.jpg" alt="">
+<img src="photo2.jpg" alt="">
+<img src="photo3.jpg" alt="">
+<img src="photo4.jpg" alt="">
+
+</div>
+</section>
+
+<section class="contact">
+
+<h2 class="section-title">Connect With Me</h2>
+
+<a class="btn"
+href="https://instagram.com/n1ckshaw"
+target="_blank">
+Instagram
+</a>
+
+</section>
+
+<footer>
+© 2026 DP Creative Photography | All Rights Reserved
+</footer>
+
+</body>
+</html>
